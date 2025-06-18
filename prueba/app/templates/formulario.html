@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+  <body>
+    <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello MYQ
+      </h1>
+      <p class="subtitle">
+        Formulario
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+        <form action="{{ url_for('guardar') }}" method="post">
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input" type="text" name="Nombre" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Correo</label>
+                <div class="control">
+                    <input class="input" type="email" name="Correo" placeholder="Correo">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Mensaje</label>
+                <div class="control">
+                    <textarea class="textarea" name="Mensaje" placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </section>
+  </body>
+</html>
