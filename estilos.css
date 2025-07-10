@@ -1,0 +1,25 @@
+#video-fondo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6); 
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#video-fondo {
+  object-position: center top; 
+}
+
+
+.form-control {
+  background-color: rgba(30, 30, 47, 0.5); 
+  color: #F2F2F2;
+}
+
+.form-check-input {
+  background-color: transparent;
+}
+
